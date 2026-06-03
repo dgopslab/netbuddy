@@ -62,9 +62,9 @@ Beispiel:
 - [ ] Lösung erst auf Wunsch anzeigen
 - [ ] mehrere Schwierigkeitsstufen vorbereiten
 
-```text
-Mögliche Aufgabentypen:
 
+Mögliche Aufgabentypen:
+```text
 - Broadcast-Adresse berechnen
 - erste nutzbare IP finden
 - letzte nutzbare IP finden
