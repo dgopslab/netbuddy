@@ -10,10 +10,16 @@ def main():
     zeige_menue()
     auswahl = input("Bitte wähle eine Option aus: ")
 
-    print()    
-    if auswahl == "4":
+    print()
+    if auswahl == "1":
+        print("IPv4-Subnetzrechner wird gestartet.")
+    elif auswahl == "2":
+        print("Übungsmodus wird gestartet.")
+    elif auswahl == "3":
+        print("Routing-Tabelle wird geprüft.")
+    elif auswahl == "4":
         print("Programm beendet.")
     else:
-        print(f"Du hast Option {auswahl} gewählt.")
+        print("Ungültige Auswahl.")
 
 main()
