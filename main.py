@@ -7,19 +7,26 @@ def zeige_menue():
     print("4 - Beenden")
 
 def main():
-    zeige_menue()
-    auswahl = input("Bitte wähle eine Option aus: ")
+    while True:
+        zeige_menue()
+        auswahl = input("Bitte wähle eine Option aus: ")
 
-    print()
-    if auswahl == "1":
-        print("IPv4-Subnetzrechner wird gestartet.")
-    elif auswahl == "2":
-        print("Übungsmodus wird gestartet.")
-    elif auswahl == "3":
-        print("Routing-Tabelle wird geprüft.")
-    elif auswahl == "4":
-        print("Programm beendet.")
-    else:
-        print("Ungültige Auswahl.")
+        print()
+        if auswahl == "1":
+            print("IPv4-Subnetzrechner wird gestartet.")
+            print()
+        elif auswahl == "2":
+            print("Übungsmodus wird gestartet.")
+            print()
+        elif auswahl == "3":
+            print("Routing-Tabelle wird geprüft.")
+            print()
+        elif auswahl == "4":
+            print("Programm beendet.")
+            print()
+            break
+        else:
+            print("Ungültige Auswahl.")
+            print()
 
 main()
