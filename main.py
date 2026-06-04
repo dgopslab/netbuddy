@@ -10,7 +10,10 @@ def main():
     zeige_menue()
     auswahl = input("Bitte wähle eine Option aus: ")
 
-    print()
-    print(f"Du hast Option {auswahl} gewählt.")
+    print()    
+    if auswahl == "4":
+        print("Programm beendet.")
+    else:
+        print(f"Du hast Option {auswahl} gewählt.")
 
 main()
