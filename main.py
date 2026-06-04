@@ -8,7 +8,10 @@ def zeige_menue():
 
 def starte_subnetzrechner():
     print("IPv4-Subnetzrechner wird gestartet.")
+    print()    
+    cidr = input("Bitte gib ein Netzwerk im CIDR-Format ein, z. B. 192.168.5.0/24: ").strip()
     print()
+    print(f"Du hast eingegeben: {cidr}")
 
 def starte_uebungsmodus():
     print("Übungsmodus wird gestartet.")
