@@ -7,7 +7,7 @@
 - [x] Projektstruktur erstellen
 - [x] `main.py` anlegen
 - [x] einfaches Konsolenmenü bauen
-- [ ] Auswahl des Nutzers sinnvoll auswerten
+- [x] Auswahl des Nutzers sinnvoll auswerten
 
 Geplantes Menü:
 
