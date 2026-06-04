@@ -6,6 +6,18 @@ def zeige_menue():
     print("3 - Routing-Tabelle prüfen")
     print("4 - Beenden")
 
+def starte_subnetzrechner():
+    print("IPv4-Subnetzrechner wird gestartet.")
+    print()
+
+def starte_uebungsmodus():
+    print("Übungsmodus wird gestartet.")
+    print()
+
+def pruefe_routing_tabelle():
+    print("Routing-Tabelle wird geprüft.")
+    print()
+
 def main():
     while True:
         zeige_menue()
@@ -13,14 +25,11 @@ def main():
 
         print()
         if auswahl == "1":
-            print("IPv4-Subnetzrechner wird gestartet.")
-            print()
+            starte_subnetzrechner()
         elif auswahl == "2":
-            print("Übungsmodus wird gestartet.")
-            print()
+            starte_uebungsmodus()
         elif auswahl == "3":
-            print("Routing-Tabelle wird geprüft.")
-            print()
+            pruefe_routing_tabelle()
         elif auswahl == "4":
             print("Programm beendet.")
             print()
@@ -28,5 +37,6 @@ def main():
         else:
             print("Ungültige Auswahl.")
             print()
+
 
 main()
