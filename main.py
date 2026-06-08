@@ -19,7 +19,17 @@ def starte_subnetzrechner():
     else:
         ip_adresse = ip_teile[0]
         praefix = ip_teile[1]
-        print(f"Du hast eingegeben:\nIP-Adresse: {ip_adresse}\nPräfix: {praefix}")
+        
+        if not praefix.isdigit():
+            print("Ungültiges Präfix. Bitte verwende eine Zahl zwischen 0 und 32.")
+        else:
+            praefix_zahl = int(praefix)
+            
+            if praefix_zahl < 0 or praefix_zahl > 32:
+                print("Ungültiges Präfix. Bitte verwende eine Zahl zwischen 0 und 32.")
+            else:
+                print(f"Du hast eingegeben:\nIP-Adresse: {ip_adresse}\nPräfix: {praefix_zahl}")
+
 
 def starte_uebungsmodus():
     print("Übungsmodus wird gestartet.")
