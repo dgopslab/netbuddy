@@ -11,7 +11,10 @@ def starte_subnetzrechner():
     print()    
     cidr = input("Bitte gib ein Netzwerk im CIDR-Format ein, z. B. 192.168.5.0/24: ").strip()
     print()
-    print(f"Du hast eingegeben: {cidr}")
+    if "/" not in cidr:
+        print("Ungültiges CIDR-Format. Bitte verwende z. B. 192.168.5.0/24.")
+    else:
+        print(f"Du hast eingegeben: {cidr}")
 
 def starte_uebungsmodus():
     print("Übungsmodus wird gestartet.")
